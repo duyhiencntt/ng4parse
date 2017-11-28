@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ParseService } from '../../core/parse/parse.service';
-import { MdSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 import { Router } from '@angular/router';
 import { FormControl, Validators } from '@angular/forms';
 @Component({
@@ -13,7 +13,7 @@ export class ForgotPasswordComponent {
 
   email = new FormControl('', Validators.compose([Validators.required, Validators.email]));
 
-  constructor(private parseService: ParseService, public snackBar: MdSnackBar, private router: Router) { }
+  constructor(private parseService: ParseService, public snackBar: MatSnackBar, private router: Router) { }
 
   onSubmit(emailRef) {
     this.parseService.resetPassword(emailRef.value)

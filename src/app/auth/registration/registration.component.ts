@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ParseService } from '../../core/parse/parse.service';
 import { Router } from '@angular/router';
-import { MdSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material';
 import {
   FormGroup, FormControl, FormBuilder, Validators, ValidatorFn, AbstractControl,
   FormGroupDirective, NgForm
@@ -24,7 +24,7 @@ export class RegistrationComponent implements OnInit{
 
   registrationForm: FormGroup;
 
-  constructor(private parseService: ParseService, private router: Router, public snackBar: MdSnackBar,
+  constructor(private parseService: ParseService, private router: Router, public snackBar: MatSnackBar,
               private formBuilder: FormBuilder) { }
 
   ngOnInit() {

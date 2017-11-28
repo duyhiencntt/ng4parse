@@ -5,16 +5,12 @@ import { LogoutComponent } from './logout/logout.component';
 import { AuthRoutes } from './auth.routing';
 import { RouterModule } from '@angular/router';
 import { RegistrationComponent } from './registration/registration.component';
-import { MdButtonModule, MdToolbarModule, MdCardModule, MdInputModule, MdSnackBarModule } from '@angular/material';
+import { MatButtonModule, MatToolbarModule, MatCardModule, MatInputModule, MatSnackBarModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 const MATERIAL_MODULES = [
-  MdButtonModule,
-  MdToolbarModule,
-  MdCardModule,
-  MdInputModule,
-  MdSnackBarModule
+  MatButtonModule, MatToolbarModule, MatCardModule, MatInputModule, MatSnackBarModule 
 ];
 
 @NgModule({
